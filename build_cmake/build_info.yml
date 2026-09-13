@@ -1,0 +1,56 @@
+cmake:
+  application:
+    configuration-dir: '/home/motaha/zephyr-course/app'
+    source-dir: '/home/motaha/zephyr-course/app'
+  board:
+    name: 'stm32_min_dev'
+    path:
+     - '/home/motaha/zephyrproject/zephyr/boards/others/stm32_min_dev'
+    qualifiers: 'stm32f103x8'
+    revision: 'blue'
+  devicetree:
+    bindings-dirs:
+     - '/home/motaha/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/motaha/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev.dts'
+     - '/home/motaha/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_stm32f103x8_blue.overlay'
+    include-dirs:
+     - '/home/motaha/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/motaha/zephyrproject/modules/hal/atmel/include'
+     - '/home/motaha/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/motaha/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/motaha/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/motaha/zephyrproject/modules/hal/infineon/dts'
+     - '/home/motaha/zephyrproject/modules/hal/microchip/include'
+     - '/home/motaha/zephyrproject/modules/hal/microchip/dts'
+     - '/home/motaha/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/motaha/zephyrproject/modules/hal/nxp/dts'
+     - '/home/motaha/zephyrproject/modules/hal/stm32/dts'
+     - '/home/motaha/zephyrproject/modules/hal/ti/dts'
+     - '/home/motaha/zephyrproject/zephyr/include'
+     - '/home/motaha/zephyrproject/zephyr/include/zephyr'
+     - '/home/motaha/zephyrproject/zephyr/dts/common'
+     - '/home/motaha/zephyrproject/zephyr/dts/vendor'
+     - '/home/motaha/zephyrproject/zephyr/dts/rx'
+     - '/home/motaha/zephyrproject/zephyr/dts/x86'
+     - '/home/motaha/zephyrproject/zephyr/dts/xtensa'
+     - '/home/motaha/zephyrproject/zephyr/dts/sparc'
+     - '/home/motaha/zephyrproject/zephyr/dts/riscv'
+     - '/home/motaha/zephyrproject/zephyr/dts/posix'
+     - '/home/motaha/zephyrproject/zephyr/dts/arm64'
+     - '/home/motaha/zephyrproject/zephyr/dts/arm'
+     - '/home/motaha/zephyrproject/zephyr/dts/arc'
+     - '/home/motaha/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/motaha/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_defconfig'
+     - '/home/motaha/zephyr-course/app/prj.conf'
+    user-files:
+     - '/home/motaha/zephyr-course/app/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/motaha/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/motaha/zephyrproject/zephyr'
+version: '0.1.0'
