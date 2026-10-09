@@ -21,7 +21,7 @@
 
 	/* node '/aliases' defined in zephyr/dts/common/skeleton.dtsi:15 */
 	aliases {
-		led0 = &led; /* in zephyr/boards/others/stm32_min_dev/stm32_min_dev.dts:33 */
+		my_led = &led; /* in zephyr/boards/others/stm32_min_dev/stm32_min_dev.dts:33 */
 	};
 
 	/* node '/soc' defined in zephyr/dts/arm/armv7-m.dtsi:6 */
